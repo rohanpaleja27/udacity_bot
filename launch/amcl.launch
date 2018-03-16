@@ -16,7 +16,7 @@
     <param name="base_frame_id" value="robot_footprint"/>
     <param name="global_frame_id" value="map"/>
     <param name="min_particles" value="10"/>
-    <param name="max_particles" value="100"/>
+    <param name="max_particles" value="100"/> <!-- Change to 50 for my_udacity_bot as it provides better results-->
     <param name="kld_err" value=".001"/>  <!-- Reduce Error -->
     <param name="update_min_d" value="0.25"/>
     <param name="update_min_a" value="0.25"/>
@@ -28,10 +28,10 @@
     <param name="laser_likelihood_max_dist" value="1.5"/>
     <param name="laser_z_hit" value="0.8"/>
     <param name="lazer_z_rand" value="0.2"/>
-    <param name="odom_alpha1" value="0.15"/> <!-- Lower default noise settings -->
-    <param name="odom_alpha2" value="0.15"/>
-    <param name="odom_alpha3" value="0.15"/>
-    <param name="odom_alpha4" value="0.15"/> 
+    <param name="odom_alpha1" value="0.05"/> <!-- Lower default noise settings --> <!-- For my_udacity_bot use .005 as better results were found-->
+    <param name="odom_alpha2" value="0.05"/>
+    <param name="odom_alpha3" value="0.05"/>  <!-- Values of .15 did well as well -->
+    <param name="odom_alpha4" value="0.05"/> 
   </node>
   
     
